@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import RxSwift
 
 class ProfileViewController: UITableViewController {
 
+    @IBOutlet weak var headerView: ProfileHeaderView!
+    
+    lazy var menuItems = [(#imageLiteral(resourceName: "slide_menu_topic"),"个人"),
+                        (#imageLiteral(resourceName: "slide_menu_message"),"消息"),
+                        (#imageLiteral(resourceName: "slide_menu_favorite"),"收藏"),
+                        (#imageLiteral(resourceName: "slide_menu_setting"),"设置")]
+    
+    private let disposeBag = DisposeBag()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.blue
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+      
+        tableView.delegate = nil
+        tableView.dataSource = nil
+        
+        Observable.just(menuItems).bind(to: tableView.rx.items){ (tableView, row, item) in
+            let cell: ProfileMenuViewCell = tableView.dequeueReusableCell()
+            return cell
+            
+        }.addDisposableTo(disposeBag)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		17BF94BE647286451DFD0FA6 /* Pods_WayToExplore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D6CD73265CF4E6C3D825C3 /* Pods_WayToExplore.framework */; };
+		641655031F3993EE007C889C /* ProfileMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655021F3993EE007C889C /* ProfileMenuViewCell.swift */; };
+		641655051F3998E4007C889C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655041F3998E3007C889C /* ProfileHeaderView.swift */; };
+		641655071F399F44007C889C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655061F399F44007C889C /* ReusableView.swift */; };
 		649210A51F3842660010B785 /* WayToExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210A41F3842660010B785 /* WayToExploreTests.swift */; };
 		649210B01F3842670010B785 /* WayToExploreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210AF1F3842670010B785 /* WayToExploreUITests.swift */; };
 		649210EE1F384C4E0010B785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210D51F384C4E0010B785 /* AppDelegate.swift */; };
@@ -57,6 +60,9 @@
 		2B96836562D2ECDAE7E004FB /* Pods_WayToExploreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WayToExploreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E197B0E872E7F3F4C3F049E /* Pods_WayToExploreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WayToExploreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4286695B0119C00B2A20F060 /* Pods-WayToExplore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WayToExplore.release.xcconfig"; path = "Pods/Target Support Files/Pods-WayToExplore/Pods-WayToExplore.release.xcconfig"; sourceTree = "<group>"; };
+		641655021F3993EE007C889C /* ProfileMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMenuViewCell.swift; sourceTree = "<group>"; };
+		641655041F3998E3007C889C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		641655061F399F44007C889C /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		6492108C1F3842660010B785 /* WayToExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayToExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A01F3842660010B785 /* WayToExploreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayToExploreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A41F3842660010B785 /* WayToExploreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToExploreTests.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 		649210D61F384C4E0010B785 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				641655021F3993EE007C889C /* ProfileMenuViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 		649210D71F384C4E0010B785 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				641655061F399F44007C889C /* ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 		649210ED1F384C4E0010B785 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				641655041F3998E3007C889C /* ProfileHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -569,11 +578,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				649210FF1F384D8F0010B785 /* CreateTopicViewController.swift in Sources */,
+				641655071F399F44007C889C /* ReusableView.swift in Sources */,
+				641655031F3993EE007C889C /* ProfileMenuViewCell.swift in Sources */,
 				649210F91F384C4E0010B785 /* LoginViewController.swift in Sources */,
 				649211031F384DC90010B785 /* NodesNavitationViewController.swift in Sources */,
 				649210F81F384C4E0010B785 /* HomeViewController.swift in Sources */,
 				649210F51F384C4E0010B785 /* AboutLicensesViewController.swift in Sources */,
 				649210EE1F384C4E0010B785 /* AppDelegate.swift in Sources */,
+				641655051F3998E4007C889C /* ProfileHeaderView.swift in Sources */,
 				649210F71F384C4E0010B785 /* FavoriteViewController.swift in Sources */,
 				649210FC1F384C4E0010B785 /* SettingViewController.swift in Sources */,
 				649210FD1F384C4E0010B785 /* TopicDetailsViewController.swift in Sources */,
