@@ -10,12 +10,13 @@ import UIKit
 
 class ProfileHeaderView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    //if cannot drag out outlet from storyboard, you can write code first then drag outlet from code to storyboard, it's xcode bug!!!
+    @IBOutlet weak var avatarButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.backgroundColor = UIColor.red
     }
-    */
-
 }

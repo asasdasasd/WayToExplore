@@ -149,7 +149,7 @@ class DrawerViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue is UIStoryboardSegue {
+        if segue is DarwerSegue {
             addChildViewController(segue.destination)
             view.addSubview(segue.destination.view)
             segue.destination.didMove(toParentViewController: self)

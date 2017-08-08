@@ -12,6 +12,18 @@ protocol ResuableView: class {
     static var reuseId: String {get}
 }
 
+// UITableViewCell no need inherit 'reuseId'
+extension ResuableView where Self: UIView {
+    static var reuseId: String {
+        return String(describing: self)
+    }
+}
+
+//make generic parameter T can be inferred
+extension UITableViewCell: ResuableView {
+    
+}
+
 extension UITableView {
     func dequeueReusableCell<T: UITableViewCell>() -> T where T: ResuableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.reuseId) as? T else {

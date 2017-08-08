@@ -87,6 +87,10 @@
                                 <constraint firstItem="hsd-8u-MNO" firstAttribute="top" secondItem="Nwa-xU-o47" secondAttribute="bottom" constant="15" id="NEk-Ht-dAK"/>
                                 <constraint firstItem="Nwa-xU-o47" firstAttribute="centerY" secondItem="Jq2-hn-mm8" secondAttribute="centerY" constant="-10" id="TQ8-lb-HuP"/>
                             </constraints>
+                            <connections>
+                                <outlet property="avatarButton" destination="Nwa-xU-o47" id="8Tg-ld-RIH"/>
+                                <outlet property="nameLabel" destination="hsd-8u-MNO" id="1my-d6-fwN"/>
+                            </connections>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileMenuViewCell" rowHeight="60" id="m41-gm-PgW" customClass="ProfileMenuViewCell" customModule="WayToExplore" customModuleProvider="target">
@@ -174,8 +178,8 @@
                     </navigationBar>
                     <connections>
                         <segue destination="FrL-xI-vjq" kind="show" id="EPL-um-Bey"/>
-                        <segue destination="W4i-gr-NBR" kind="show" id="ugZ-q7-dF6"/>
-                        <segue destination="2Ma-DS-sTx" kind="show" id="qJv-jm-HeV"/>
+                        <segue destination="W4i-gr-NBR" kind="show" identifier="MessageViewController" id="ugZ-q7-dF6"/>
+                        <segue destination="2Ma-DS-sTx" kind="show" identifier="FavoriteViewController" id="qJv-jm-HeV"/>
                         <segue destination="Xfa-nn-KJB" kind="relationship" relationship="rootViewController" id="q3z-QS-Uzc"/>
                     </connections>
                 </navigationController>

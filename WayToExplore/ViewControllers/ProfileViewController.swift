@@ -20,7 +20,9 @@ class ProfileViewController: UITableViewController {
     
     private let disposeBag = DisposeBag()
     
-    
+    var navController: UINavigationController? {
+        return drawerViewController?.centerViewController as? UINavigationController
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +33,30 @@ class ProfileViewController: UITableViewController {
         
         Observable.just(menuItems).bind(to: tableView.rx.items){ (tableView, row, item) in
             let cell: ProfileMenuViewCell = tableView.dequeueReusableCell()
+            
             return cell
             
         }.addDisposableTo(disposeBag)
+        
+        tableView.rx.itemSelected.subscribe(onNext:{[weak self] IndexPath in
+            guard let `self` = self else { return }
+            self.tableView.deselectRow(at: IndexPath, animated: true)
+            guard let nav = self.navController else { return }
+            
+            switch IndexPath.row {
+            case 0:
+                self.drawerViewController?.isOpenDrawer = false
+            case 1:
+                self.drawerViewController?.isOpenDrawer = false
+            case 2:
+                self.drawerViewController?.isOpenDrawer = false
+            case 3:
+                self.drawerViewController?.isOpenDrawer = false
+                
+            default: break
+            }
+            
+        }).addDisposableTo(disposeBag)
 
     }
 
