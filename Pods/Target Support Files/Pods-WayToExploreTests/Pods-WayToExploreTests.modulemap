@@ -1,0 +1,6 @@
+framework module Pods_WayToExploreTests {
+  umbrella header "Pods-WayToExploreTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

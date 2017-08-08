@@ -1,0 +1,54 @@
+PODS:
+  - 1PasswordExtension (1.8.4)
+  - Alamofire (4.5.0)
+  - Crashlytics (3.8.5):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.12)
+  - Kanna (2.2.1)
+  - Kingfisher (3.10.3)
+  - Moya/Core (8.0.5):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (8.0.5):
+    - Moya/Core
+    - RxSwift (~> 3.0)
+  - PKHUD (4.2.3)
+  - Result (3.2.3)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+  - SKPhotoBrowser (4.0.1)
+
+DEPENDENCIES:
+  - 1PasswordExtension
+  - Crashlytics
+  - Fabric
+  - Kanna
+  - Kingfisher
+  - Moya/RxSwift
+  - PKHUD
+  - RxCocoa
+  - RxDataSources
+  - SKPhotoBrowser (~> 4.0.1)
+
+SPEC CHECKSUMS:
+  1PasswordExtension: e775a29310c65851e5a6cec1afc349ab4e334e47
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
+  Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
+  Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+
+PODFILE CHECKSUM: 4eed03ef4425e4a90b843a02471395c2348ec018
+
+COCOAPODS: 1.2.1
