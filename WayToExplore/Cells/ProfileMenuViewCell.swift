@@ -13,9 +13,24 @@ class ProfileMenuViewCell: UITableViewCell {
 
     @IBOutlet weak var unreadLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+
+    var unreadCount: Int = 0 {
+        willSet {
+            unreadLabel.isHidden = newValue < 1
+            unreadLabel.text = "  \(newValue)"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
+        unreadLabel.clipsToBounds = true
+        unreadLabel.layer.cornerRadius = 9
+        unreadLabel.isHidden = true
+    }
+    
+    func updateTheme() {
+        self.backgroundColor = 
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

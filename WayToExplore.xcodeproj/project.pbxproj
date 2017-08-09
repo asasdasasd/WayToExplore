@@ -12,6 +12,8 @@
 		641655051F3998E4007C889C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655041F3998E3007C889C /* ProfileHeaderView.swift */; };
 		641655071F399F44007C889C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655061F399F44007C889C /* ReusableView.swift */; };
 		641655091F3A0198007C889C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655081F3A0198007C889C /* User.swift */; };
+		6457B5B21F3AEFAA00B7DB4C /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */; };
+		6457B5B41F3AF0D800B7DB4C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B31F3AF0D800B7DB4C /* Theme.swift */; };
 		649210A51F3842660010B785 /* WayToExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210A41F3842660010B785 /* WayToExploreTests.swift */; };
 		649210B01F3842670010B785 /* WayToExploreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210AF1F3842670010B785 /* WayToExploreUITests.swift */; };
 		649210EE1F384C4E0010B785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210D51F384C4E0010B785 /* AppDelegate.swift */; };
@@ -65,6 +67,8 @@
 		641655041F3998E3007C889C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		641655061F399F44007C889C /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		641655081F3A0198007C889C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		6457B5B31F3AF0D800B7DB4C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		6492108C1F3842660010B785 /* WayToExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayToExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A01F3842660010B785 /* WayToExploreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayToExploreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A41F3842660010B785 /* WayToExploreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToExploreTests.swift; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				649210D51F384C4E0010B785 /* AppDelegate.swift */,
+				6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */,
+				6457B5B31F3AF0D800B7DB4C /* Theme.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -582,6 +588,7 @@
 			files = (
 				649210FF1F384D8F0010B785 /* CreateTopicViewController.swift in Sources */,
 				641655071F399F44007C889C /* ReusableView.swift in Sources */,
+				6457B5B21F3AEFAA00B7DB4C /* AppStyle.swift in Sources */,
 				641655031F3993EE007C889C /* ProfileMenuViewCell.swift in Sources */,
 				649210F91F384C4E0010B785 /* LoginViewController.swift in Sources */,
 				649211031F384DC90010B785 /* NodesNavitationViewController.swift in Sources */,
@@ -596,6 +603,7 @@
 				649210F61F384C4E0010B785 /* DrawerViewController.swift in Sources */,
 				641655091F3A0198007C889C /* User.swift in Sources */,
 				649210FB1F384C4E0010B785 /* ProfileViewController.swift in Sources */,
+				6457B5B41F3AF0D800B7DB4C /* Theme.swift in Sources */,
 				649211051F384DE90010B785 /* NodesTopicsViewController.swift in Sources */,
 				649210FA1F384C4E0010B785 /* MessageViewController.swift in Sources */,
 			);
