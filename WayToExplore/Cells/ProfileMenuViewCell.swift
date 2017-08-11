@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ProfileMenuViewCell: UITableViewCell {
     @IBOutlet weak var iconView: UIImageView!
@@ -30,13 +32,34 @@ class ProfileMenuViewCell: UITableViewCell {
     }
     
     func updateTheme() {
-        self.backgroundColor = 
+        self.backgroundColor = AppStyle.shared.theme.tableBackgroundColor
+        contentView.backgroundColor = AppStyle.shared.theme.tableBackgroundColor
+        let selectedView = UIView()
+        selectedView.backgroundColor = AppStyle.shared.theme.cellSelectedBackgroundColor
+        self.selectedBackgroundView = selectedView
+        
+        //difference between upper?
+        //self.selectedBackgroundView?.backgroundColor = UIColor.red
+        
+        nameLabel.textColor = AppStyle.shared.theme.black64Color
     }
 
+    func configure(image: UIImage, text: String) {
+        iconView.image = AppStyle.shared.theme == .night ? image.imageWithTintColor(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)) : image
+        nameLabel.text = text
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+}
 
+extension Reactive where Base: ProfileMenuViewCell {
+    var unread: UIBindingObserver<Base, Int>{
+        return UIBindingObserver(UIElement: self.base, binding: { (view, value) in
+            view.unreadCount = value
+        })
+    }
 }

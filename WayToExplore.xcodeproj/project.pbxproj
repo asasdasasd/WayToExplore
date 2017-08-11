@@ -14,6 +14,9 @@
 		641655091F3A0198007C889C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641655081F3A0198007C889C /* User.swift */; };
 		6457B5B21F3AEFAA00B7DB4C /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */; };
 		6457B5B41F3AF0D800B7DB4C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B31F3AF0D800B7DB4C /* Theme.swift */; };
+		6457B5B61F3AFD2F00B7DB4C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B51F3AFD2F00B7DB4C /* UIImage.swift */; };
+		6457B5BA1F3C32F700B7DB4C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5B91F3C32F700B7DB4C /* Account.swift */; };
+		6457B5BC1F3C35A000B7DB4C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6457B5BB1F3C35A000B7DB4C /* API.swift */; };
 		649210A51F3842660010B785 /* WayToExploreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210A41F3842660010B785 /* WayToExploreTests.swift */; };
 		649210B01F3842670010B785 /* WayToExploreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210AF1F3842670010B785 /* WayToExploreUITests.swift */; };
 		649210EE1F384C4E0010B785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649210D51F384C4E0010B785 /* AppDelegate.swift */; };
@@ -69,6 +72,9 @@
 		641655081F3A0198007C889C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
 		6457B5B31F3AF0D800B7DB4C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6457B5B51F3AFD2F00B7DB4C /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		6457B5B91F3C32F700B7DB4C /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		6457B5BB1F3C35A000B7DB4C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6492108C1F3842660010B785 /* WayToExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayToExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A01F3842660010B785 /* WayToExploreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WayToExploreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		649210A41F3842660010B785 /* WayToExploreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayToExploreTests.swift; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 				649210D51F384C4E0010B785 /* AppDelegate.swift */,
 				6457B5B11F3AEFAA00B7DB4C /* AppStyle.swift */,
 				6457B5B31F3AF0D800B7DB4C /* Theme.swift */,
+				6457B5B91F3C32F700B7DB4C /* Account.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				641655061F399F44007C889C /* ReusableView.swift */,
+				6457B5B51F3AFD2F00B7DB4C /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 		649210D91F384C4E0010B785 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				6457B5BB1F3C35A000B7DB4C /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -587,11 +596,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				649210FF1F384D8F0010B785 /* CreateTopicViewController.swift in Sources */,
+				6457B5BA1F3C32F700B7DB4C /* Account.swift in Sources */,
 				641655071F399F44007C889C /* ReusableView.swift in Sources */,
 				6457B5B21F3AEFAA00B7DB4C /* AppStyle.swift in Sources */,
 				641655031F3993EE007C889C /* ProfileMenuViewCell.swift in Sources */,
 				649210F91F384C4E0010B785 /* LoginViewController.swift in Sources */,
 				649211031F384DC90010B785 /* NodesNavitationViewController.swift in Sources */,
+				6457B5B61F3AFD2F00B7DB4C /* UIImage.swift in Sources */,
 				649210F81F384C4E0010B785 /* HomeViewController.swift in Sources */,
 				649210F51F384C4E0010B785 /* AboutLicensesViewController.swift in Sources */,
 				649210EE1F384C4E0010B785 /* AppDelegate.swift in Sources */,
@@ -599,6 +610,7 @@
 				649210F71F384C4E0010B785 /* FavoriteViewController.swift in Sources */,
 				649210FC1F384C4E0010B785 /* SettingViewController.swift in Sources */,
 				649210FD1F384C4E0010B785 /* TopicDetailsViewController.swift in Sources */,
+				6457B5BC1F3C35A000B7DB4C /* API.swift in Sources */,
 				649211011F384DAD0010B785 /* NodesViewController.swift in Sources */,
 				649210F61F384C4E0010B785 /* DrawerViewController.swift in Sources */,
 				641655091F3A0198007C889C /* User.swift in Sources */,
